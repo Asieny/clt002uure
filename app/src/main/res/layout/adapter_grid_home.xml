@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Tao_F" >
+
+    <ImageView
+        android:id="@+id/iv_adapter_grid_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:scaleType="center" />
+
+    <TextView
+        android:id="@+id/tv_adapter_grid_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/tv_Black"
+        android:layout_marginTop="3dp"
+        android:gravity="center" />
+
+</LinearLayout>

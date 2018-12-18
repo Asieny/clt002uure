@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".Main_FA">
+
+    <!--AppBarLayout标题的容器，只能作为coordinatorlayout里面的第一个子View
+        AppBarLayout是一个容器，需要滚动的子view必须放到这个容器里面
+
+        android:fitsSystemWindows="true"   适应系统，是否把内容显示到状态栏
+        app:layout_scrollFlags="scroll"  决定子view能否滚出屏幕
+        -->
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            app:layout_scrollFlags="scroll">
+
+            <ImageView
+                android:id="@+id/img_space"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/show_m1"/>
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:visibility="gone">-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center_vertical">-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="文化广场"-->
+            <!--android:textColor="#8586A4"/>-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="掌握最新文化动态"/>-->
+            <!--</LinearLayout>-->
+
+            <!--<de.hdodenhof.circleimageview.CircleImageView-->
+            <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+            <!--android:id="@+id/img_record"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:src="@drawable/club_details"-->
+            <!--app:civ_border_color="#ffffff"-->
+            <!--app:civ_border_width="2dp"/>-->
+            <!--</RelativeLayout>-->
+
+            <!--<TextView-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:background="@color/gray_1"/>-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center_vertical">-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="文化非遗"-->
+            <!--android:textColor="#8586A4"/>-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="非物质文化遗产保护"/>-->
+            <!--</LinearLayout>-->
+
+            <!--<de.hdodenhof.circleimageview.CircleImageView-->
+            <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+            <!--android:id="@+id/img_Intangible_cultural_heritage"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:src="@drawable/club_details"-->
+            <!--app:civ_border_color="#ffffff"-->
+            <!--app:civ_border_width="2dp"/>-->
+            <!--</RelativeLayout>-->
+            <!--</LinearLayout>-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_8"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <com.javis.mytools.DropdownButton
+                android:id="@+id/time1"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:background="#dfdfdf"/>
+
+            <com.javis.mytools.DropdownButton
+                android:id="@+id/time2"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="match_parent"
+                android:background="#dfdfdf"/>
+
+            <com.javis.mytools.DropdownButton
+                android:id="@+id/time3"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <!--<LinearLayout-->
+        <!--android:id="@+id/linear_title"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:background="@color/white"-->
+        <!--android:orientation="horizontal">-->
+        <!--<TextView-->
+        <!--android:id="@+id/tv_area"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="2dp"-->
+        <!--android:drawableRight="@drawable/arrow_down"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:background="#999c9c9c"-->
+        <!--android:text="全部商区"/>-->
+        <!--<TextView-->
+        <!--android:id="@+id/tv_sort"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="2dp"-->
+        <!--android:drawableRight="@drawable/arrow_down"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:background="#999c9c9c"-->
+        <!--android:text="智能排序"/>-->
+        <!--<TextView-->
+        <!--android:id="@+id/tv_pay"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="2dp"-->
+        <!--android:drawableRight="@drawable/arrow_down"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:background="#999c9c9c"-->
+        <!--android:text="筛选"/>-->
+        <!--</LinearLayout>-->
+    </android.support.design.widget.AppBarLayout>
+
+    <!--主内容写在这里
+        必须是NestedScrollView或者是RecyclerView，其他控件不能滑动
+        因为他们都能配置layout_behavior这个属性
+        NestedScrollView和ScrollView使用方法一模一样
+
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        不写这个属性整个布局会占满屏幕；用来通知AppBarLayout界面内容发生了滚动事件，
+        不配置滚动的话上面内容会一下子滚上去
+        -->
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+        </com.scwang.smartrefresh.layout.header.ClassicsHeader>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <com.jarvis.MyView.MyListView
+                android:id="@+id/listView_tao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:cacheColorHint="#000000"
+                android:divider="@null"/>
+
+        </android.support.v4.widget.NestedScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</android.support.design.widget.CoordinatorLayout>

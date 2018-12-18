@@ -1,0 +1,116 @@
+{
+  "City": [
+    {
+      "name": "定位",
+      "key": "0",
+      "first": "",
+      "full": "",
+      "code": ""
+    },
+    {
+      "name": "热门",
+      "key": "1",
+      "first": "",
+      "full": "",
+      "code": ""
+    },
+    {
+      "name": "北海",
+      "key": "B",
+      "first": "bh",
+      "full": "beihai",
+      "code": "6230"
+    },
+    {
+      "name": "百色",
+      "key": "B",
+      "first": "bs",
+      "full": "baise",
+      "code": "6261"
+    },
+    {
+      "name": "崇左",
+      "key": "C",
+      "first": "cz",
+      "full": "chonzuo",
+      "code": "6128"
+    },
+    {
+      "name": "防城港",
+      "key": "F",
+      "first": "fcg",
+      "full": "fangchenggang",
+      "code": "6330"
+    },
+    {
+      "name": "贵港",
+      "key": "G",
+      "first": "gg",
+      "full": "guigang",
+      "code": "6242"
+    },
+    {
+      "name": "桂林",
+      "key": "G",
+      "first": "gl",
+      "full": "guilin",
+      "code": "6170"
+    },
+    {
+      "name": "河池",
+      "key": "H",
+      "first": "hc",
+      "full": "hechi",
+      "code": "6281"
+    },
+    {
+      "name": "贺州",
+      "key": "H",
+      "first": "hz",
+      "full": "hezhou",
+      "code": "6225"
+    },
+    {
+      "name": "来宾",
+      "key": "L",
+      "first": "lb",
+      "full": "laibin",
+      "code": "6155"
+    },
+    {
+      "name": "柳州",
+      "key": "L",
+      "first": "nn",
+      "full": "nanning",
+      "code": "6110"
+    },
+    {
+      "name": "南宁",
+      "key": "N",
+      "first": "nn",
+      "full": "nanning",
+      "code": "6110"
+    },
+    {
+      "name": "钦州",
+      "key": "Q",
+      "first": "qz",
+      "full": "qinzhou",
+      "code": "6311"
+    },
+    {
+      "name": "梧州",
+      "key": "W",
+      "first": "wz",
+      "full": "wuzhou",
+      "code": "6210"
+    },
+    {
+      "name": "玉林",
+      "key": "Y",
+      "first": "yl",
+      "full": "yulin",
+      "code": "6240"
+    }
+  ]
+}
