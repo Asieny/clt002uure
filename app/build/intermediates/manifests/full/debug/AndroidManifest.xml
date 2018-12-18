@@ -243,6 +243,7 @@
         <activity
             android:name="com.guangxi.culturecloud.activitys.CultureCrowdFundingDetialActivity"
             android:screenOrientation="portrait" />
+        <activity android:name="com.guangxi.culturecloud.activitys.YanXueActivity" />
         <activity
             android:name="cn.sharesdk.tencent.qq.ReceiveActivity"
             android:launchMode="singleTask"

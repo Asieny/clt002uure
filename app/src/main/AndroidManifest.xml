@@ -235,6 +235,7 @@
         <activity
             android:name="com.guangxi.culturecloud.activitys.CultureCrowdFundingDetialActivity"
             android:screenOrientation="portrait"/>
+        <activity android:name=".activitys.YanXueActivity"/>
         <activity
             android:name="cn.sharesdk.tencent.qq.ReceiveActivity"
             android:launchMode="singleTask"
@@ -282,7 +283,6 @@
         <meta-data
             android:name="Mob-AppSecret"
             android:value="572c0ac9fe24de66423116a7998c1037"/>
-
 
 
         <!--微信支付activity-->

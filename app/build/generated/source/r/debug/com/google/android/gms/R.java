@@ -33,7 +33,7 @@ public final class R {
 	public static final class id {
 		public static final int adjust_height = 0x7f0f004b;
 		public static final int adjust_width = 0x7f0f004c;
-		public static final int buy_now = 0x7f0f01ac;
+		public static final int buy_now = 0x7f0f01ad;
 		public static final int none = 0x7f0f0025;
 		public static final int normal = 0x7f0f0021;
 		public static final int wrap_content = 0x7f0f0035;

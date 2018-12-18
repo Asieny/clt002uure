@@ -29,6 +29,7 @@ import com.guangxi.culturecloud.activitys.CultureVolunteerActivity;
 import com.guangxi.culturecloud.activitys.FilmRoomActivity;
 import com.guangxi.culturecloud.activitys.LoveSocietyActivity;
 import com.guangxi.culturecloud.activitys.ShowsDetailActivityNew;
+import com.guangxi.culturecloud.activitys.YanXueActivity;
 import com.guangxi.culturecloud.adapter.BigEventAdapter;
 import com.guangxi.culturecloud.global.NetConfig;
 import com.guangxi.culturecloud.http.HttpUtil;
@@ -83,9 +84,9 @@ public class Home_F extends AbsFragment {
 
     private int[]    pic_path_icon1      = {R.drawable.secret__01, R.drawable.secret__02, R.drawable.secret__03,
             R.drawable.secret__04, R.drawable.secret__05, R.drawable.secret__10, R.drawable.secret__06, R.drawable.secret__11, R.drawable.secret__13, R.drawable.secret__07, R.drawable.secret__08, R.drawable.secret__09};
-    private int[]    pic_path_icon2      = {R.drawable.secret__14, R.drawable.secret__15};
+    private int[]    pic_path_icon2      = {R.drawable.secret__14, R.drawable.secret__15,R.drawable.secret__15};
     private String[] pic_path_icon_name1 = {"大活动", "图书馆", "美术馆", "博物馆", "体育场馆", "民族文化", "文化艺术馆", "影剧院", "社区活动", "文化志愿者", "爱社团", "活动众筹"};
-    private String[] pic_path_icon_name2 = {"我在现场", "铜鼓奖"};
+    private String[] pic_path_icon_name2 = {"我在现场", "铜鼓奖","研学"};
     private ArrayList pic_path_icon;
     private ArrayList pic_path_icon_name;
 
@@ -607,6 +608,10 @@ public class Home_F extends AbsFragment {
                 if ("铜鼓奖".equals(name)) {
                     ToastUtils.makeShortText("内容正在维护中", getActivity());
                 }
+                if ("研学".equals(name)) {
+                    Intent yanXueAct = new Intent(getActivity(), YanXueActivity.class);
+                    startActivity(yanXueAct);
+                }
             }
         });
     }
@@ -706,13 +711,9 @@ public class Home_F extends AbsFragment {
 
 
         public class HolderView {
-
             private ImageView iv_pic;
-
             private TextView tv_name;
-
         }
-
     }
 
     //显示dialog

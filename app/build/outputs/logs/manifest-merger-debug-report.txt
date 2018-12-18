@@ -503,46 +503,50 @@ ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:235:9-2
 		ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:237:13-49
 	android:name
 		ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:236:13-96
+activity#com.guangxi.culturecloud.activitys.YanXueActivity
+ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:238:9-61
+	android:name
+		ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:238:19-59
 activity#cn.sharesdk.tencent.qq.ReceiveActivity
-ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:238:9-250:20
+ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:239:9-251:20
 	android:launchMode
-		ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:240:13-44
+		ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:241:13-44
 	android:noHistory
-		ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:241:13-37
+		ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:242:13-37
 	android:name
-		ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:239:13-66
+		ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:240:13-66
 meta-data#IFLYTEK_APPKEY_AD
-ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:252:9-254:39
+ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:253:9-255:39
 	android:value
-		ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:254:13-37
+		ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:255:13-37
 	android:name
-		ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:253:13-45
+		ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:254:13-45
 meta-data#com.baidu.lbsapi.API_KEY
-ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:263:9-265:63
+ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:264:9-266:63
 	android:value
-		ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:265:13-61
+		ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:266:13-61
 	android:name
-		ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:264:13-52
+		ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:265:13-52
 service#com.baidu.location.f
-ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:270:9-273:40
+ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:271:9-274:40
 	android:enabled
-		ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:272:13-35
+		ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:273:13-35
 	android:process
-		ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:273:13-38
+		ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:274:13-38
 	android:name
-		ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:271:13-48
+		ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:272:13-48
 meta-data#Mob-AppKey
-ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:279:9-281:44
+ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:280:9-282:44
 	android:value
-		ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:281:13-42
+		ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:282:13-42
 	android:name
-		ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:280:13-38
+		ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:281:13-38
 meta-data#Mob-AppSecret
-ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:282:9-284:63
+ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:283:9-285:63
 	android:value
-		ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:284:13-61
+		ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:285:13-61
 	android:name
-		ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:283:13-41
+		ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:284:13-41
 activity#com.guangxi.culturecloud.wxapi.WXPayEntryActivity
 ADDED from D:\D\DDDDDDDDDDDD\culture002\app\src\main\AndroidManifest.xml:289:9-300:20
 	android:launchMode

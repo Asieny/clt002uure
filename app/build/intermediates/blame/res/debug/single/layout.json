@@ -240,6 +240,10 @@
         "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\layout\\dialog_show_img.xml"
     },
     {
+        "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_yanxue_web.xml",
+        "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\layout\\activity_yanxue_web.xml"
+    },
+    {
         "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\debug\\layout\\capture.xml",
         "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\layout\\capture.xml"
     },
