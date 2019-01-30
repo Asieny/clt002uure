@@ -24,16 +24,16 @@
         "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable-hdpi\\buy_now.png"
     },
     {
-        "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi\\address.png",
-        "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable-hdpi\\address.png"
+        "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi\\second_2.png",
+        "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable-hdpi\\second_2.png"
     },
     {
         "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi\\common_full_open_on_phone.png",
         "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\drawable-hdpi\\common_full_open_on_phone.png"
     },
     {
-        "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi\\second_2.png",
-        "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable-hdpi\\second_2.png"
+        "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi\\address.png",
+        "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable-hdpi\\address.png"
     },
     {
         "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi\\book1.png",
@@ -416,12 +416,12 @@
         "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\generated\\res\\pngs\\release\\drawable-hdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi\\icon_date.png",
-        "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable-hdpi\\icon_date.png"
-    },
-    {
         "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi\\at_scene_titel_pic.png",
         "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable-hdpi\\at_scene_titel_pic.png"
+    },
+    {
+        "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi\\icon_date.png",
+        "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable-hdpi\\icon_date.png"
     },
     {
         "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi\\f009.png",
@@ -488,12 +488,12 @@
         "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable-hdpi\\zc_time.png"
     },
     {
-        "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi\\gymnasium.png",
-        "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable-hdpi\\gymnasium.png"
-    },
-    {
         "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi\\weixin_icon.png",
         "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable-hdpi\\weixin_icon.png"
+    },
+    {
+        "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi\\gymnasium.png",
+        "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable-hdpi\\gymnasium.png"
     },
     {
         "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\release\\drawable-hdpi\\others.png",

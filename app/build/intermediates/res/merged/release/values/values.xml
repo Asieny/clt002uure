@@ -351,7 +351,7 @@
     <color name="teal">#008080</color>
     <color name="textcolor">#727272</color>
     <color name="thistle">#D8BFD8</color>
-    <color name="title_bar_bg">#d4d4d4</color>
+    <color name="title_bar_bg">#CCCCCC</color>
     <color name="title_bar_text">#FFFFFF</color>
     <color name="tomato">#FF6347</color>
     <color name="transparent">#00000000</color>
@@ -1336,6 +1336,14 @@ function login(form){
         <item name="android:background">@color/title_bar_bg</item>
         <item name="android:clipToPadding">true</item>
         <item name="android:fitsSystemWindows">true</item>
+    </style>
+    <style name="ActivityTheme01" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <item name="android:clipToPadding">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryDark">@color/orange</item>
+        <item name="colorAccent">@color/orange</item>
     </style>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
@@ -3049,11 +3057,16 @@ function login(form){
         <item name="android:paddingLeft">15dp</item>
     </style>
     <style name="myProgressBarStyleLarge">
-        　　<item name="android:indeterminateDrawable">@drawable/progress_large</item>
-        　　<item name="android:minWidth">76dip</item>
-        　　<item name="android:maxWidth">76dip</item>
-        　　<item name="android:minHeight">76dip</item>
-        　　<item name="android:maxHeight">76dip</item>
+        　　
+        <item name="android:indeterminateDrawable">@drawable/progress_large</item>
+        　　
+        <item name="android:minWidth">76dip</item>
+        　　
+        <item name="android:maxWidth">76dip</item>
+        　　
+        <item name="android:minHeight">76dip</item>
+        　　
+        <item name="android:maxHeight">76dip</item>
     </style>
     <style name="popWindow_anim_style" parent="android:Animation">
         <item name="android:windowEnterAnimation">@anim/pop_up_in</item>

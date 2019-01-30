@@ -133,11 +133,6 @@ public class PersonalPointsActivity extends BaseActivity implements View.OnClick
         });
     }
 
-    private void setDetailData() {
-        MyAdapter myAdapter = new MyAdapter(mList);
-        mList_view.setAdapter(myAdapter);
-    }
-
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
@@ -153,6 +148,13 @@ public class PersonalPointsActivity extends BaseActivity implements View.OnClick
                 //                startActivity(intent);
                 break;
         }
+    }
+
+    private MyAdapter myAdapter;
+
+    private void setDetailData() {
+        myAdapter = new MyAdapter(mList);
+        mList_view.setAdapter(myAdapter);
     }
 
     class MyAdapter extends BaseAdapter {

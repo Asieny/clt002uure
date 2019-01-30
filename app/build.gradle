@@ -10,7 +10,7 @@ android {
         targetSdkVersion 19
         versionCode 1
         versionName "1.0"
-        multiDexEnabled true
+        multiDexEnabled true//方法数超过63550使用
         ndk {
             abiFilters "armeabi", "armeabi-v7a", "x86", "mips",'x86_64','arm64-v8a'
         }
@@ -77,13 +77,18 @@ dependencies {
     compile files('libs/ShareSDK-Wechat-Moments-2.8.1.jar')
     compile 'de.hdodenhof:circleimageview:2.2.0'
     compile 'org.greenrobot:eventbus:3.0.0'
-    compile 'org.jsoup:jsoup:1.10.2'
+    //    compile 'org.jsoup:jsoup:1.10.2'
     compile files('libs/alipaySdk-20170922.jar')
-    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'//微信支付
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    //微信支付
     compile 'org.greenrobot:eventbus:3.0.0'
     compile 'com.google.android.gms:play-services-appindexing:8.1.0'
     compile 'com.github.nanchen2251:CompressHelper:1.0.5'
     compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-1'
     compile 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-1'
     compile 'com.android.support:appcompat-v7:25.3.1'
+    compile files('libs/commons-codec-1.1.jar')
+    compile files('libs/jsoup-1.11.3.jar')
+    //多方法打包
+    compile 'com.android.support:multidex:1.0.1'
 }

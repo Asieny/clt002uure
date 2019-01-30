@@ -290,6 +290,7 @@ public class ShowsDetailActivityNew extends BaseActivity {
                     mLat = lat;
                 }
                 String newpic = mShowImgUrl + arr.getNewpic();
+                ImageUrlOrPath = newpic;
                 ImageLoaderUtil.displayImageIcon(newpic, mImg_show_picture);
                 String label1 = arr.getLabel1();
                 String label2 = arr.getLabel2();
@@ -780,7 +781,8 @@ public class ShowsDetailActivityNew extends BaseActivity {
                     });
                     //关闭sso授权
                     oks.disableSSOWhenAuthorize();
-                    String url = "http://220.248.107.62:8084/whyapi/index.html?id=" + mShowId + "&tb_type=" + showName;
+                    //                    String url = "http://220.248.107.62:8084/whyapi/index.html?id=" + mShowId + "&tb_type=" + showName;
+                    String url = "http://222.216.241.136:8081/whyapi//index.html?id=" + mShowId + "&tb_type=" + showName;
                     // title标题，微信、QQ和QQ空间等平台使用
                     oks.setTitle(mTv_show_name.getText() + "");
                     // titleUrl QQ和QQ空间跳转链接
@@ -927,7 +929,7 @@ public class ShowsDetailActivityNew extends BaseActivity {
                     Gson gson = new Gson();
                     clubDetailInfo = gson.fromJson(response.toString(), ClubDetailInfo.class);
                     String result = clubDetailInfo.getResult();
-                    if (result.equals("2")||result.equals("3")) {
+                    if (result.equals("2") || result.equals("3")) {
                         if (kind.equals("点赞")) {
                             mImg_dianzan.setImageResource(R.drawable.ic_zan_select2);
                             isDianZan = true;

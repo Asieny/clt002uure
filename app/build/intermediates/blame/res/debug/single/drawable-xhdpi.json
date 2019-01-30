@@ -228,16 +228,16 @@
         "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable-xhdpi\\start.png"
     },
     {
+        "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\user_life.png",
+        "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable-xhdpi\\user_life.png"
+    },
+    {
         "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\second_2.png",
         "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable-xhdpi\\second_2.png"
     },
     {
         "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\secret__06.png",
         "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable-xhdpi\\secret__06.png"
-    },
-    {
-        "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\user_life.png",
-        "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable-xhdpi\\user_life.png"
     },
     {
         "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ssdk_oks_classic_yixin.png",

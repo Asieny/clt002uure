@@ -40,16 +40,16 @@ public final class R {
 		public static final int activity_vertical_margin = 0x7f090057;
 	}
 	public static final class id {
-		public static final int back = 0x7f0f025c;
-		public static final int linearLayout1 = 0x7f0f01ae;
-		public static final int loadingImageView = 0x7f0f01d4;
-		public static final int main_top_search_btn = 0x7f0f025d;
+		public static final int back = 0x7f0f025e;
+		public static final int linearLayout1 = 0x7f0f01b0;
+		public static final int loadingImageView = 0x7f0f01d6;
+		public static final int main_top_search_btn = 0x7f0f025f;
 		public static final int title = 0x7f0f005f;
 		public static final int tv_title = 0x7f0f00a3;
 	}
 	public static final class layout {
-		public static final int dialog_custom_progress = 0x7f04006a;
-		public static final int m_main = 0x7f0400a4;
+		public static final int dialog_custom_progress = 0x7f04006b;
+		public static final int m_main = 0x7f0400a5;
 	}
 	public static final class mipmap {
 		public static final int ic_launcher = 0x7f030003;
@@ -60,8 +60,8 @@ public final class R {
 	}
 	public static final class style {
 		public static final int ActivityTheme = 0x7f0a00a2;
-		public static final int AppBaseTheme = 0x7f0a00a9;
-		public static final int CustomDialog = 0x7f0a00de;
-		public static final int CustomProgressDialog = 0x7f0a00df;
+		public static final int AppBaseTheme = 0x7f0a00aa;
+		public static final int CustomDialog = 0x7f0a00df;
+		public static final int CustomProgressDialog = 0x7f0a00e0;
 	}
 }

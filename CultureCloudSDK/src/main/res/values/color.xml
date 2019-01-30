@@ -2,7 +2,8 @@
 <resources>
 
     <!-- 标题栏 -->
-    <color name="title_bar_bg">#d4d4d4</color>
+    <!--<color name="title_bar_bg">#d4d4d4</color>-->
+    <color name="title_bar_bg">#CCCCCC</color>
     <color name="line_bg">#3ed884</color>
     <color name="title_bar_text">#FFFFFF</color>
       <color name="textcolor">#727272</color>

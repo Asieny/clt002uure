@@ -370,6 +370,7 @@ public class SettingAvtivity extends BaseActivity {
                             //上传头像地址
                             sendHeadUrlToIntnet(fileName);
                         } else {
+                            hideProgressDialog();
                             ToastUtils.makeShortText("头像上传失败", getBaseContext());
                         }
                     }

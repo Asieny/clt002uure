@@ -56,12 +56,12 @@
         "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable\\home_head_et_style.xml"
     },
     {
-        "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\release\\drawable\\notification_icon_background.xml",
-        "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\notification_icon_background.xml"
-    },
-    {
         "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\release\\drawable\\zhijiao_gray.xml",
         "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable\\zhijiao_gray.xml"
+    },
+    {
+        "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\release\\drawable\\notification_icon_background.xml",
+        "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\notification_icon_background.xml"
     },
     {
         "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_round_green.xml",
@@ -72,12 +72,12 @@
         "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_seekbar_track_material.xml"
     },
     {
-        "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_round_lable2.xml",
-        "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable\\btn_round_lable2.xml"
-    },
-    {
         "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_round_red.xml",
         "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable\\btn_round_red.xml"
+    },
+    {
+        "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_round_lable2.xml",
+        "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable\\btn_round_lable2.xml"
     },
     {
         "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\release\\drawable\\btn_login_wechat_selector.xml",

@@ -13,7 +13,7 @@ public class NetConfig {
     //登陆明细
     public static final String INSERT_LOGINCOUNT = "http://222.216.241.136:8081/whyapi/insertLoginCount";
 
-//    public static String ROOT                     = "http://220.248.107.62:8084/whyapi/";
+    //    public static String ROOT                     = "http://220.248.107.62:8084/whyapi/";
     public static String ROOT                     = "http://222.216.241.136:8081/whyapi/";
     //链接请求头
     public static String URL_HEAD_ADDRESS         = "http://222.216.241.136:8081/whyapi/";
@@ -38,7 +38,8 @@ public class NetConfig {
     public static String CHECK_MESSAGE = ROOT + "checkMessage";
 
     //用户登录
-    public static String LOGIN           = ROOT + "login?";
+    public static String LOGIN = ROOT + "login?";
+
     //修改密码
     public static String MODIFYPSW       = ROOT + "modifyPsw?";
     //图书馆分类
@@ -201,9 +202,12 @@ public class NetConfig {
     //帮助规则
     public static String SERHELP_RULE      = ROOT + "serHelpRule";
     //积分规则
-    public static String POINTS_RULE      = ROOT + "serPointsRule";
+    public static String POINTS_RULE       = ROOT + "serPointsRule";
     //分享录入积分
     public static String INSERT_SHARE      = ROOT + "insertshare";
     //个人积分列表
-    public static String SERUSER_POINTS      = ROOT + "seruserpoints";
+    public static String SERUSER_POINTS    = ROOT + "seruserpoints";
+
+    //研学上传视频
+    public static String UPLOADVIDEO = ROOT + "uploadVideo?";
 }

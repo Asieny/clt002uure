@@ -84,9 +84,9 @@ public class Home_F extends AbsFragment {
 
     private int[]    pic_path_icon1      = {R.drawable.secret__01, R.drawable.secret__02, R.drawable.secret__03,
             R.drawable.secret__04, R.drawable.secret__05, R.drawable.secret__10, R.drawable.secret__06, R.drawable.secret__11, R.drawable.secret__13, R.drawable.secret__07, R.drawable.secret__08, R.drawable.secret__09};
-    private int[]    pic_path_icon2      = {R.drawable.secret__14, R.drawable.secret__15,R.drawable.secret__15};
+    private int[]    pic_path_icon2      = {R.drawable.secret__14, R.drawable.secret__15, R.drawable.secret__15};
     private String[] pic_path_icon_name1 = {"大活动", "图书馆", "美术馆", "博物馆", "体育场馆", "民族文化", "文化艺术馆", "影剧院", "社区活动", "文化志愿者", "爱社团", "活动众筹"};
-    private String[] pic_path_icon_name2 = {"我在现场", "铜鼓奖","研学"};
+    private String[] pic_path_icon_name2 = {"我在现场", "铜鼓奖", "研学"};
     private ArrayList pic_path_icon;
     private ArrayList pic_path_icon_name;
 
@@ -106,8 +106,8 @@ public class Home_F extends AbsFragment {
     private ListView          listView_tao;
 
     private String cityName;
-    final int REQUEST_CODE_CITY = 1001;
-
+    final int REQUEST_CODE_CITY   = 1001;
+    final int REQUEST_CODE_YANXUE = 1986;//跳转研学的请求码
     private String city, cityCode;
 
     private BigEventAdapter    bigEventAdapter;
@@ -434,7 +434,6 @@ public class Home_F extends AbsFragment {
                 //获取地址请求头
                 getUrlHead(city, mView);
                 break;
-
             default:
                 break;
         }
@@ -610,11 +609,13 @@ public class Home_F extends AbsFragment {
                 }
                 if ("研学".equals(name)) {
                     Intent yanXueAct = new Intent(getActivity(), YanXueActivity.class);
-                    startActivity(yanXueAct);
+                    startActivityForResult(yanXueAct, REQUEST_CODE_YANXUE);
+                    //                    startActivity(yanXueAct);
                 }
             }
         });
     }
+
 
     /**
      * 自定义类实现PagerAdapter，填充显示数据
@@ -712,7 +713,7 @@ public class Home_F extends AbsFragment {
 
         public class HolderView {
             private ImageView iv_pic;
-            private TextView tv_name;
+            private TextView  tv_name;
         }
     }
 

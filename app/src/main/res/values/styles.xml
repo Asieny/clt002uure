@@ -13,6 +13,7 @@
 
         -->
     </style>
+
     <style name="BottomDialog" parent="@style/Base.V7.Theme.AppCompat.Light.Dialog">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowBackground">@android:color/transparent</item>
@@ -68,11 +69,27 @@
         <item name="android:windowReturnTransition">@null</item>
 
     </style>
+
     <style name="AppTheme2" parent="VMTheme">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/vm_theme_primary</item>
         <item name="colorPrimaryDark">@color/vm_theme_primary_dark</item>
         <item name="colorAccent">@color/vm_theme_accent</item>
+    </style>
+
+    <style name="ActivityTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/title_bar_bg</item>
+        <item name="android:clipToPadding">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+    <style name="ActivityTheme01" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <item name="android:clipToPadding">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryDark">@color/orange</item>
+        <item name="colorAccent">@color/orange</item>
     </style>
     <!-- 登录注册样式 -->
     <style name="login_edit_style">
@@ -122,13 +139,20 @@
         <item name="android:windowIsFloating">true</item>
         <item name="android:windowContentOverlay">@null</item>
     </style>
-    <style name="myProgressBarStyleLarge" >
-        　　<item name="android:indeterminateDrawable">@drawable/progress_large</item>
-        　　<item name="android:minWidth">76dip</item>
-        　　<item name="android:maxWidth">76dip</item>
-        　　<item name="android:minHeight">76dip</item>
-        　　<item name="android:maxHeight">76dip</item>
+
+    <style name="myProgressBarStyleLarge">
+        　　
+        <item name="android:indeterminateDrawable">@drawable/progress_large</item>
+        　　
+        <item name="android:minWidth">76dip</item>
+        　　
+        <item name="android:maxWidth">76dip</item>
+        　　
+        <item name="android:minHeight">76dip</item>
+        　　
+        <item name="android:maxHeight">76dip</item>
     </style>
+
     <style name="Dialog" parent="android:style/Theme.Dialog">
         <item name="android:windowBackground">@android:color/white</item>
         <item name="android:windowNoTitle">true</item>
@@ -140,10 +164,12 @@
         <item name="android:textSize">18.0dip</item>
         <item name="android:textColor">#ffffffff</item>
     </style>
+
     <style name="text_16_666666">
         <item name="android:textSize">16.0dip</item>
         <item name="android:textColor">#ff666666</item>
     </style>
+
     <style name="text_15_ffffff_sdw" parent="@style/sdw_79351b">
         <item name="android:textSize">15.0dip</item>
         <item name="android:textColor">#ffffffff</item>
@@ -153,6 +179,7 @@
         <item name="android:textSize">15.0dip</item>
         <item name="android:textColor">#ff666666</item>
     </style>
+
     <style name="sdw_white">
         <item name="android:shadowColor">#7fffffff</item>
         <item name="android:shadowDx">0.0</item>
@@ -180,18 +207,21 @@
         <item name="android:textColor">#fff</item>
         <item name="android:background">@drawable/btn_round_green</item>
     </style>
+
     <style name="lable1">
         <item name="android:layout_height">48dp</item>
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">#fff</item>
         <item name="android:background">@drawable/btn_round_lable1</item>
     </style>
+
     <style name="lable2">
         <item name="android:layout_height">48dp</item>
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">#fff</item>
         <item name="android:background">@drawable/btn_round_lable2</item>
     </style>
+
     <style name="lable3">
         <item name="android:layout_height">48dp</item>
         <item name="android:textSize">16sp</item>
@@ -223,7 +253,6 @@
         <item name="progress_reached_bar_height">1.5dp</item>
         <item name="progress_unreached_bar_height">0.75dp</item>
     </style>
-
 
 
     <style name="NumberProgressBar_Beauty_Red">

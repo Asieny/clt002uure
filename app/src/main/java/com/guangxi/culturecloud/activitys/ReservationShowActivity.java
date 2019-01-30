@@ -518,12 +518,11 @@ public class ReservationShowActivity extends BaseActivity {
         params.put("table_name", table_name);
         params.put("ticket_count", ticket_count);
         params.put("username", mEdit_order_name.getText());
-
-        //        params.put("lng", mOrder.getLng());
-        //        params.put("lat", mOrder.getLat());
-        //        params.put("pic_address", mOrder.getNewpic());
-        //        params.put("begin_time", mOrder.getFdate());
-        //        params.put("address", faddress);
+        params.put("lng", mOrder.getLng());
+        params.put("lat", mOrder.getLat());
+        params.put("pic_address", mOrder.getNewpic());
+        params.put("begin_time", mOrder.getFdate());
+        params.put("address", faddress);
         params.setUseJsonStreamer(true);
         HttpUtil.post(insertWhyOrder, params, new HttpUtil.JsonHttpResponseUtil() {
             @Override
@@ -619,11 +618,11 @@ public class ReservationShowActivity extends BaseActivity {
         params.put("ticket_count", ticket_count);
         params.put("username", mEdit_order_name.getText());
 
-        //        params.put("lng", mOrder.getLng());
-        //        params.put("lat", mOrder.getLat());
-        //        params.put("pic_address", mOrder.getNewpic());
-        //        params.put("begin_time", mOrder.getFdate());
-        //        params.put("address", faddress);
+        params.put("lng", mOrder.getLng());
+        params.put("lat", mOrder.getLat());
+        params.put("pic_address", mOrder.getNewpic());
+        params.put("begin_time", mOrder.getFdate());
+        params.put("address", faddress);
         params.setUseJsonStreamer(true);
         HttpUtil.post(insertWhyOrder, params, new HttpUtil.JsonHttpResponseUtil() {
             @Override

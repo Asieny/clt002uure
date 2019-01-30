@@ -2,6 +2,7 @@ package com;
 
 
 import android.content.Context;
+import android.support.multidex.MultiDex;
 
 import com.baidu.location.BDLocation;
 import com.guangxi.culturecloud.utils.ToolLocation;
@@ -45,5 +46,11 @@ public class MyApplication extends AbsApp {
 
         //初始化ShareSDK
         ShareSDK.initSDK(this);
+    }
+
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        MultiDex.install(this);
     }
 }

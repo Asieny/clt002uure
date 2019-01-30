@@ -143,8 +143,12 @@ public class OrderDetailActivity extends BaseActivity implements View.OnClickLis
         String newpic = myOrderInfo.newpic;
         String faddress = myOrderInfo.address;
         String fdate = myOrderInfo.begin_time;
-        double lat = Double.parseDouble(myOrderInfo.lat);
-        double lng = Double.parseDouble(myOrderInfo.lng);
+        double lat = 22.77937;
+        double lng = 108.40753;
+        if (null != myOrderInfo.lat && null != myOrderInfo.lng && !"".equals(myOrderInfo.lat) && !"".equals(myOrderInfo.lng)) {
+            lat = Double.parseDouble(myOrderInfo.lat);
+            lng = Double.parseDouble(myOrderInfo.lng);
+        }
         if (!newpic.equals("")) {
             String picUrl = newpic.split(",")[0];
             ImageLoaderUtil.displayImageIcon(myOrderInfo.get_img_address + picUrl.replace("\\", "/"), mImg_show);
