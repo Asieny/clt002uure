@@ -6,23 +6,32 @@ package com.guangxi.culturecloud.global;
  * @author zww
  */
 public class NetConfig {
-    //游客ID
-    public static       String UserID            = "28";
-    //第一个链接，定位后，用来修改链接头，获取不同内容
-    public static final String FIRSTURL          = "http://222.216.241.136:8081/whyapi/serApiAddressByArea";
-    //登陆明细
-    public static final String INSERT_LOGINCOUNT = "http://222.216.241.136:8081/whyapi/insertLoginCount";
+    public static String MainROOT                 = "http://222.216.241.136:8081/whyapi/";
 
-    //    public static String ROOT                     = "http://220.248.107.62:8084/whyapi/";
-    public static String ROOT                     = "http://222.216.241.136:8081/whyapi/";
+
+    public static String ROOT                     = "http://129.28.68.184:8080/whyapi/";
     //链接请求头
-    public static String URL_HEAD_ADDRESS         = "http://222.216.241.136:8081/whyapi/";
+    //    public static String URL_HEAD_ADDRESS         = "http://222.216.241.136:8081/whyapi/";
+    public static String URL_HEAD_ADDRESS         = "http://129.28.68.184:8080/whyapi/";
     //提交图片接口（可根据地区改变）
     public static String URL_CHANGE_UPLOAD_BASE64 = ROOT + "uploadBase64";
 
-    public static String IMG      = "http://222.216.241.136:8081/upFiles/";
+    //    public static String IMG      = "http://222.216.241.136:8081/upFiles/";
+    public static String IMG      = "http://129.28.68.184:8080/upFiles/";
     //用户提交的图片前面加地址
-    public static String HEAD_IMG = "http://222.216.241.136:8081/upFiles/photo/";
+    //    public static String HEAD_IMG = "http://222.216.241.136:8081/upFiles/photo/";
+    public static String HEAD_IMG = "http://129.28.68.184:8080/upFiles/photo/";
+
+
+    //游客ID
+    public static String UserID         = "28";
+    //第一个链接，定位后，用来修改链接头，获取不同内容
+    public static String FIRSTURL       = MainROOT + "serApiAddressByArea";
+    //获取城市下地区名称和内码
+    public static String CITY_AREA_CODE = MainROOT + "cityCode";
+
+    //登陆明细
+    public static String INSERT_LOGINCOUNT = ROOT + "insertLoginCount";
 
     //提交图片接口
     public static String UPLOAD_BASE64 = ROOT + "uploadBase64";

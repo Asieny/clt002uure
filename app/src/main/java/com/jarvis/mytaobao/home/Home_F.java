@@ -35,6 +35,7 @@ import com.guangxi.culturecloud.global.NetConfig;
 import com.guangxi.culturecloud.http.HttpUtil;
 import com.guangxi.culturecloud.model.BannerInfo;
 import com.guangxi.culturecloud.model.BigEventInfo;
+import com.guangxi.culturecloud.model.CityAreaCodeInfo;
 import com.guangxi.culturecloud.model.Society;
 import com.guangxi.culturecloud.utils.ToastUtils;
 import com.jarvis.MyView.MyGridView;
@@ -195,12 +196,60 @@ public class Home_F extends AbsFragment {
                             //修改所有链接
                             changeAllLinks(url_address, get_img_address);
                         } catch (Exception e) {
+                            MyApplication.cityName = "南宁市";
                             ToastUtils.makeShortText("跳转省会城市资讯", getActivity());
+                        }
+                    } else {
+                        MyApplication.cityName = "南宁市";
+                        ToastUtils.makeShortText("跳转省会城市资讯", getActivity());
+                    }
+                    //获取定位城市下的地区码
+                    getCityAreaCode(MyApplication.cityName);
+                }
+                //其他 轮播图及 推荐活动列表
+                otherAllAction(view);
+            }
+        });
+    }
+
+    private void getCityAreaCode(String cityName) {
+        RequestParams params = new RequestParams();
+        params.put("city_name", cityName);
+        HttpUtil.get(NetConfig.CITY_AREA_CODE, params, new HttpUtil.JsonHttpResponseUtil() {
+            @Override
+            public void onStart() {
+                showProgressDialog("正在加载，请稍后");
+                super.onStart();
+            }
+
+            @Override
+            public void onFinish() {
+                hideProgressDialog();
+                super.onFinish();
+            }
+
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
+                if (statusCode == 200) {
+                    String ress = response.toString();
+                    if (null != ress && !ress.equals("") && !ress.equals("{}")) {
+                        Gson gson = new Gson();
+                        try {
+                            CityAreaCodeInfo areaCodeInfo = gson.fromJson(response.toString(), CityAreaCodeInfo.class);
+                            List<CityAreaCodeInfo.ArrBean> arr = areaCodeInfo.getArr();
+                            if (arr.size() > 0) {
+                                if (null == MyApplication.mCityAreaCode) {
+                                    MyApplication.mCityAreaCode = new ArrayList<CityAreaCodeInfo.ArrBean>();
+                                } else {
+                                    MyApplication.mCityAreaCode.clear();
+                                }
+                                MyApplication.mCityAreaCode.addAll(arr);
+                            }
+                        } catch (Exception e) {
+                            //                            ToastUtils.makeShortText("未搜索到城市下地区", getActivity());
                         }
                     }
                 }
-                //其他balabala
-                otherAllAction(view);
             }
         });
     }

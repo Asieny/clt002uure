@@ -2133,9 +2133,6 @@ function login(form){
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">1px</item>
         <item name="android:background">@color/line</item>
-    </style><style name="text_15_ffffff_sdw" parent="@style/sdw_79351b">
-        <item name="android:textSize">15.0dip</item>
-        <item name="android:textColor">#ffffffff</item>
     </style><style name="ActivityTheme01" parent="Theme.AppCompat.Light.NoActionBar">
         
         <item name="android:clipToPadding">true</item>
@@ -2143,6 +2140,9 @@ function login(form){
         <item name="colorPrimary">@color/orange</item>
         <item name="colorPrimaryDark">@color/orange</item>
         <item name="colorAccent">@color/orange</item>
+    </style><style name="text_15_ffffff_sdw" parent="@style/sdw_79351b">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
     </style><style name="NumberProgressBar_Beauty_Red">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
