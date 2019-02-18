@@ -16,12 +16,12 @@ public class UpdatePwdActivity$$ViewInjector<T extends com.guangxi.culturecloud.
     target.ivRefresh = finder.castView(view, 2131689631, "field 'ivRefresh'");
     view = finder.findRequiredView(source, 2131689567, "field 'title'");
     target.title = finder.castView(view, 2131689567, "field 'title'");
-    view = finder.findRequiredView(source, 2131689761, "field 'oldpwd'");
-    target.oldpwd = finder.castView(view, 2131689761, "field 'oldpwd'");
-    view = finder.findRequiredView(source, 2131689762, "field 'pwd'");
-    target.pwd = finder.castView(view, 2131689762, "field 'pwd'");
-    view = finder.findRequiredView(source, 2131689763, "field 'btn'");
-    target.btn = finder.castView(view, 2131689763, "field 'btn'");
+    view = finder.findRequiredView(source, 2131689762, "field 'oldpwd'");
+    target.oldpwd = finder.castView(view, 2131689762, "field 'oldpwd'");
+    view = finder.findRequiredView(source, 2131689763, "field 'pwd'");
+    target.pwd = finder.castView(view, 2131689763, "field 'pwd'");
+    view = finder.findRequiredView(source, 2131689764, "field 'btn'");
+    target.btn = finder.castView(view, 2131689764, "field 'btn'");
   }
 
   @Override public void reset(T target) {

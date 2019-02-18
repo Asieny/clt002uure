@@ -57,9 +57,8 @@
             <com.javis.mytools.DropdownButton
                 android:id="@+id/downbt"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:minHeight="30dp">
+                android:layout_height="35dp"
+                android:background="@color/white">
             </com.javis.mytools.DropdownButton>
 
             <ListView

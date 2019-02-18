@@ -16,22 +16,22 @@ public class SettingAvtivity$$ViewInjector<T extends com.guangxi.culturecloud.ac
     target.ivRefresh = finder.castView(view, 2131689631, "field 'ivRefresh'");
     view = finder.findRequiredView(source, 2131689567, "field 'title'");
     target.title = finder.castView(view, 2131689567, "field 'title'");
-    view = finder.findRequiredView(source, 2131689766, "field 'updatePwd'");
-    target.updatePwd = finder.castView(view, 2131689766, "field 'updatePwd'");
-    view = finder.findRequiredView(source, 2131689768, "field 'newcode'");
-    target.newcode = finder.castView(view, 2131689768, "field 'newcode'");
-    view = finder.findRequiredView(source, 2131689767, "field 'update'");
-    target.update = finder.castView(view, 2131689767, "field 'update'");
-    view = finder.findRequiredView(source, 2131689770, "field 'data'");
-    target.data = finder.castView(view, 2131689770, "field 'data'");
-    view = finder.findRequiredView(source, 2131689769, "field 'clean'");
-    target.clean = finder.castView(view, 2131689769, "field 'clean'");
-    view = finder.findRequiredView(source, 2131689771, "field 'btnexit'");
-    target.btnexit = finder.castView(view, 2131689771, "field 'btnexit'");
-    view = finder.findRequiredView(source, 2131689764, "field 'linear_head_img'");
-    target.linear_head_img = finder.castView(view, 2131689764, "field 'linear_head_img'");
-    view = finder.findRequiredView(source, 2131689765, "field 'circleImg'");
-    target.circleImg = finder.castView(view, 2131689765, "field 'circleImg'");
+    view = finder.findRequiredView(source, 2131689767, "field 'updatePwd'");
+    target.updatePwd = finder.castView(view, 2131689767, "field 'updatePwd'");
+    view = finder.findRequiredView(source, 2131689769, "field 'newcode'");
+    target.newcode = finder.castView(view, 2131689769, "field 'newcode'");
+    view = finder.findRequiredView(source, 2131689768, "field 'update'");
+    target.update = finder.castView(view, 2131689768, "field 'update'");
+    view = finder.findRequiredView(source, 2131689771, "field 'data'");
+    target.data = finder.castView(view, 2131689771, "field 'data'");
+    view = finder.findRequiredView(source, 2131689770, "field 'clean'");
+    target.clean = finder.castView(view, 2131689770, "field 'clean'");
+    view = finder.findRequiredView(source, 2131689772, "field 'btnexit'");
+    target.btnexit = finder.castView(view, 2131689772, "field 'btnexit'");
+    view = finder.findRequiredView(source, 2131689765, "field 'linear_head_img'");
+    target.linear_head_img = finder.castView(view, 2131689765, "field 'linear_head_img'");
+    view = finder.findRequiredView(source, 2131689766, "field 'circleImg'");
+    target.circleImg = finder.castView(view, 2131689766, "field 'circleImg'");
   }
 
   @Override public void reset(T target) {

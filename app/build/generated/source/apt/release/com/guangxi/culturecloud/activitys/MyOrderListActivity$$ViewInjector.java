@@ -10,10 +10,10 @@ public class MyOrderListActivity$$ViewInjector<T extends com.guangxi.cultureclou
     View view;
     view = finder.findRequiredView(source, 2131689614, "field 'ivBack'");
     target.ivBack = finder.castView(view, 2131689614, "field 'ivBack'");
-    view = finder.findRequiredView(source, 2131689694, "field 'mTabLayout'");
-    target.mTabLayout = finder.castView(view, 2131689694, "field 'mTabLayout'");
-    view = finder.findRequiredView(source, 2131689695, "field 'mViewPager'");
-    target.mViewPager = finder.castView(view, 2131689695, "field 'mViewPager'");
+    view = finder.findRequiredView(source, 2131689695, "field 'mTabLayout'");
+    target.mTabLayout = finder.castView(view, 2131689695, "field 'mTabLayout'");
+    view = finder.findRequiredView(source, 2131689696, "field 'mViewPager'");
+    target.mViewPager = finder.castView(view, 2131689696, "field 'mViewPager'");
   }
 
   @Override public void reset(T target) {

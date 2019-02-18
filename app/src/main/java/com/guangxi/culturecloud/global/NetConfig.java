@@ -6,13 +6,13 @@ package com.guangxi.culturecloud.global;
  * @author zww
  */
 public class NetConfig {
-    public static String MainROOT                 = "http://222.216.241.136:8081/whyapi/";
+    //    public static String MainROOT                 = "http://222.216.241.136:8081/whyapi/";
+    public static String MainROOT = "http://129.28.68.184:8080/whyapi/";
 
-
-    public static String ROOT                     = "http://129.28.68.184:8080/whyapi/";
+    public static String ROOT                     = "http://129.28.68.184:8081/citywhyapi/";
     //链接请求头
     //    public static String URL_HEAD_ADDRESS         = "http://222.216.241.136:8081/whyapi/";
-    public static String URL_HEAD_ADDRESS         = "http://129.28.68.184:8080/whyapi/";
+    public static String URL_HEAD_ADDRESS         = "http://129.28.68.184:8081/citywhyapi/";
     //提交图片接口（可根据地区改变）
     public static String URL_CHANGE_UPLOAD_BASE64 = ROOT + "uploadBase64";
 
@@ -29,9 +29,9 @@ public class NetConfig {
     public static String FIRSTURL       = MainROOT + "serApiAddressByArea";
     //获取城市下地区名称和内码
     public static String CITY_AREA_CODE = MainROOT + "cityCode";
-
     //登陆明细
-    public static String INSERT_LOGINCOUNT = ROOT + "insertLoginCount";
+    public static String INSERT_LOGINCOUNT = MainROOT + "insertLoginCount";
+
 
     //提交图片接口
     public static String UPLOAD_BASE64 = ROOT + "uploadBase64";

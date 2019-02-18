@@ -117,6 +117,7 @@ public class BigActiveActivity extends BaseActivity implements AdapterView.OnIte
     private void initData() {
         data = new ArrayList<>();
         adapter = new BigEventAdapter(this);
+        adapter.setDataSource(data);
         //访问网络获取活动列表数据
         getActivityListInfo(citycode);
     }
@@ -149,8 +150,8 @@ public class BigActiveActivity extends BaseActivity implements AdapterView.OnIte
                             BigEventInfo firstInfo = new BigEventInfo().fromJson(obj.toString());
                             data.add(firstInfo);
                         }
-                        adapter.setDataSource(data);
                     }
+                    adapter.notifyDataSetChanged();
                 }
             });
         } else {
@@ -177,8 +178,8 @@ public class BigActiveActivity extends BaseActivity implements AdapterView.OnIte
                             BigEventInfo firstInfo = new BigEventInfo().fromJson(obj.toString());
                             data.add(firstInfo);
                         }
-                        adapter.setDataSource(data);
                     }
+                    adapter.notifyDataSetChanged();
                 }
             });
         }

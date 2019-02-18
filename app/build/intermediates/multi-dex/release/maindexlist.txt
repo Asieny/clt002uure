@@ -75,6 +75,7 @@ android/support/v7/view/menu/CascadingMenuPopup$1.class
 cz/msebera/android/httpclient/conn/ssl/SSLSocketFactory.class
 cz/msebera/android/httpclient/entity/ByteArrayEntity.class
 cz/msebera/android/httpclient/impl/conn/HttpPoolEntry.class
+com/guangxi/culturecloud/model/CityAreaCodeInfo.class
 android/support/v7/widget/RecyclerView$1.class
 cz/msebera/android/httpclient/impl/conn/DefaultResponseParser.class
 android/support/annotation/Nullable.class
@@ -366,6 +367,7 @@ com/guangxi/culturecloud/activitys/ChooseCityActivity$HotCityListAdapter$ViewHol
 android/support/v4/view/ViewCompatHC.class
 cz/msebera/android/httpclient/HttpMessage.class
 android/support/annotation/StyleRes.class
+com/guangxi/culturecloud/model/CityAreaCodeInfo$ArrBean.class
 android/support/annotation/XmlRes.class
 android/support/design/widget/Snackbar.class
 android/support/design/widget/ValueAnimatorCompat$AnimatorListener.class
