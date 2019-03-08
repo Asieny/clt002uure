@@ -106,7 +106,6 @@ public class Home_F extends AbsFragment {
     private ArrayList<String> bannerUrl;
     private ListView          listView_tao;
 
-    private String cityName;
     final int REQUEST_CODE_CITY   = 1001;
     final int REQUEST_CODE_YANXUE = 1986;//跳转研学的请求码
     private String city, cityCode;
@@ -130,14 +129,6 @@ public class Home_F extends AbsFragment {
 
     private void initView(final View view) {
         iv_shao = (TextView) view.findViewById(R.id.iv_shao);
-        //		ToolLocation.requestLocation(getActivity(), new ToolLocation.InterfaceBDLocation() {
-        //
-        //			@Override
-        //			public void onLocationSuccess(BDLocation location) {
-        //				cityName = location.getCity();
-        //
-        //			}
-        //		}, false);
         iv_shao.setText(MyApplication.cityName);
         mSwipe_refresh = (SmartRefreshLayout) view.findViewById(R.id.swipe_refresh);
         tv_top_title = (TextView) view.findViewById(R.id.tv_top_title);
@@ -146,6 +137,12 @@ public class Home_F extends AbsFragment {
         mImg_banner2 = (ImageView) view.findViewById(R.id.img_banner2);
         viewPager = (AbSlidingPlayView) view.findViewById(R.id.viewPager_menu);
         listView_tao = (ListView) view.findViewById(R.id.listView_tao);
+
+        bannerUrl = new ArrayList<>();
+        initIconBanner();
+        //根据定位地址，修改链接head；
+        //获取地址请求头
+        getUrlHead(MyApplication.cityName, view);
         iv_shao.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View arg0) {
@@ -160,10 +157,110 @@ public class Home_F extends AbsFragment {
                 otherAllAction(view);
             }
         });
-        initIconBanner();
-        //根据定位地址，修改链接head；
-        //获取地址请求头
-        getUrlHead(MyApplication.cityName, view);
+        //设置播放方式为顺序播放
+        viewPager.setPlayType(1);
+        //设置播放间隔时间
+        viewPager.setSleepTime(3000);
+        viewPager.setOnItemClickListener(new AbOnItemClickListener() {
+            @Override
+            public void onClick(int position) {
+                //跳转到详情界面
+                //                Intent intent = new Intent(getActivity(), BabyActivity.class);
+                //                startActivity(intent);
+            }
+        });
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        switch (requestCode) {
+            case REQUEST_CODE_CITY:
+                if (data != null) {
+                    city = data.getStringExtra("city") + "市";
+                    cityCode = data.getStringExtra("cityCode");
+                    iv_shao.setText(city);
+                    //                    MyApplication.cityName = city;
+                    //根据修改地址，修改链接head；
+                } else {
+                    city = "南宁市";
+                    iv_shao.setText("南宁市");
+                }
+                //获取地址请求头
+                getUrlHead(city, mView);
+                break;
+            default:
+                break;
+        }
+    }
+
+    private void initIconBanner() {
+        if (null == iconListView) {
+            iconListView = new ArrayList<View>();
+        } else {
+            iconListView.clear();
+        }
+        for (int i = 0; i < 2; i++) {
+            //导入iconPager的布局
+            View view = LayoutInflater.from(getActivity()).inflate(R.layout.icon_pager, null);
+            mMy_icon_gridview = (MyGridView) view.findViewById(R.id.my_icon_gridview);
+            pic_path_icon = new ArrayList();
+            pic_path_icon_name = new ArrayList();
+            for (int n = 0; n < pic_path_icon1.length; n++) {
+                pic_path_icon.add(pic_path_icon1[n]);
+            }
+            for (int n = 0; n < pic_path_icon_name1.length; n++) {
+                pic_path_icon_name.add(pic_path_icon_name1[n]);
+            }
+            adapter_GridView_icon = new Adapter_GridView_icon(getActivity(), pic_path_icon, pic_path_icon_name);
+            mMy_icon_gridview.setAdapter(adapter_GridView_icon);
+            iconListView.add(view);
+            //设置图标点击事件
+            setIconClick(mMy_icon_gridview);
+        }
+        MyViewPagerAdapter myViewPagerAdapter = new MyViewPagerAdapter(iconListView);
+        mViewPager_icon.setAdapter(myViewPagerAdapter);
+        mViewPager_icon.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                if (pic_path_icon != null) {
+                    pic_path_icon.clear();
+                }
+                if (pic_path_icon_name != null) {
+                    pic_path_icon_name.clear();
+                }
+                if (position == 0) {
+                    mImg_banner1.setImageResource(R.drawable.bg_banner_round_blue);
+                    mImg_banner2.setImageResource(R.drawable.bg_banner_round_gray);
+                    for (int n = 0; n < pic_path_icon1.length; n++) {
+                        pic_path_icon.add(pic_path_icon1[n]);
+                    }
+                    for (int n = 0; n < pic_path_icon_name1.length; n++) {
+                        pic_path_icon_name.add(pic_path_icon_name1[n]);
+                    }
+                } else if (position == 1) {
+                    mImg_banner1.setImageResource(R.drawable.bg_banner_round_gray);
+                    mImg_banner2.setImageResource(R.drawable.bg_banner_round_blue);
+                    for (int n = 0; n < pic_path_icon2.length; n++) {
+                        pic_path_icon.add(pic_path_icon2[n]);
+                    }
+                    for (int n = 0; n < pic_path_icon_name2.length; n++) {
+                        pic_path_icon_name.add(pic_path_icon_name2[n]);
+                    }
+                }
+                adapter_GridView_icon.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
     }
 
     private void getUrlHead(String cityName, final View view) {
@@ -212,144 +309,9 @@ public class Home_F extends AbsFragment {
         });
     }
 
-    private void getCityAreaCode(String cityName) {
-        RequestParams params = new RequestParams();
-        params.put("city_name", cityName);
-        HttpUtil.get(NetConfig.CITY_AREA_CODE, params, new HttpUtil.JsonHttpResponseUtil() {
-            @Override
-            public void onStart() {
-                showProgressDialog("正在加载，请稍后");
-                super.onStart();
-            }
-
-            @Override
-            public void onFinish() {
-                hideProgressDialog();
-                super.onFinish();
-            }
-
-            @Override
-            public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
-                if (statusCode == 200) {
-                    String ress = response.toString();
-                    if (null != ress && !ress.equals("") && !ress.equals("{}")) {
-                        Gson gson = new Gson();
-                        try {
-                            CityAreaCodeInfo areaCodeInfo = gson.fromJson(response.toString(), CityAreaCodeInfo.class);
-                            List<CityAreaCodeInfo.ArrBean> arr = areaCodeInfo.getArr();
-                            if (arr.size() > 0) {
-                                if (null == MyApplication.mCityAreaCode) {
-                                    MyApplication.mCityAreaCode = new ArrayList<CityAreaCodeInfo.ArrBean>();
-                                } else {
-                                    MyApplication.mCityAreaCode.clear();
-                                }
-                                MyApplication.mCityAreaCode.addAll(arr);
-                            }
-                        } catch (Exception e) {
-                            //                            ToastUtils.makeShortText("未搜索到城市下地区", getActivity());
-                        }
-                    }
-                }
-            }
-        });
-    }
-
     private void otherAllAction(View view) {
-        //设置播放方式为顺序播放
-        viewPager.setPlayType(1);
-        //设置播放间隔时间
-        viewPager.setSleepTime(3000);
         //从网络获取轮播图
         getBanner();
-        //        gridView_classify.setOnItemClickListener(new OnItemClickListener() {
-        //            @Override
-        //            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        //
-        //                if (position == 0) {
-        //                    Intent bigActive = new Intent(getActivity(), BigActiveActivity.class);
-        //                    bigActive.putExtra("bigUrl", NetConfig.BIGEVENT_LIST);
-        //                    bigActive.putExtra("mModelId", 0);
-        //                    bigActive.putExtra("actName", "大活动");
-        //                    startActivity(bigActive);
-        //                }
-        //                if (position == 1) {
-        //                    //                    Intent library = new Intent(getActivity(), LibraryActivity.class);
-        //                    //                    library.putExtra("type", 0);
-        //                    Intent library = new Intent(getActivity(), BigActiveActivity.class);
-        //                    library.putExtra("bigUrl", NetConfig.LIBRARYACTIVITYLIST);
-        //                    library.putExtra("mModelId", 1);
-        //                    library.putExtra("actName", "图书馆");
-        //                    startActivity(library);
-        //                }
-        //                if (position == 2) {
-        //                    //                    Intent library = new Intent(getActivity(), LibraryActivity.class);
-        //                    //                    library.putExtra("type", 1);
-        //                    Intent library = new Intent(getActivity(), BigActiveActivity.class);
-        //                    library.putExtra("bigUrl", NetConfig.ARTSACTIVITYLIST);
-        //                    library.putExtra("mModelId", 2);
-        //                    library.putExtra("actName", "美术馆");
-        //                    startActivity(library);
-        //                }
-        //                if (position == 3) {
-        //                    //                    Intent library = new Intent(getActivity(), LibraryActivity.class);
-        //                    //                    library.putExtra("type", 2);
-        //                    Intent library = new Intent(getActivity(), BigActiveActivity.class);
-        //                    library.putExtra("bigUrl", NetConfig.MUSEUMACTIVITYLIST);
-        //                    library.putExtra("mModelId", 3);
-        //                    library.putExtra("actName", "博物馆");
-        //                    startActivity(library);
-        //                }
-        //                if (position == 4) {
-        //                    //                    Intent library = new Intent(getActivity(), LibraryActivity.class);
-        //                    //                    library.putExtra("type", 3);
-        //                    Intent library = new Intent(getActivity(), BigActiveActivity.class);
-        //                    library.putExtra("bigUrl", NetConfig.SPORTLIST);
-        //                    library.putExtra("mModelId", 4);
-        //                    library.putExtra("actName", "体育场馆");
-        //                    startActivity(library);
-        //                }
-        //                if (position == 5) {
-        //                    //                    Intent library = new Intent(getActivity(), LibraryActivity.class);
-        //                    //                    library.putExtra("type", 4);
-        //                    Intent library = new Intent(getActivity(), BigActiveActivity.class);
-        //                    library.putExtra("bigUrl", NetConfig.NATIONLIST);
-        //                    library.putExtra("mModelId", 5);
-        //                    library.putExtra("actName", "民族文化");
-        //                    startActivity(library);
-        //                }
-        //                if (position == 6) {
-        //                    //                    Intent library = new Intent(getActivity(), LibraryActivity.class);
-        //                    //                    library.putExtra("type", 5);
-        //                    Intent library = new Intent(getActivity(), BigActiveActivity.class);
-        //                    library.putExtra("bigUrl", NetConfig.CULTUREACTIVITYLIST);
-        //                    library.putExtra("mModelId", 6);
-        //                    library.putExtra("actName", "文化艺术馆");
-        //                    startActivity(library);
-        //                }
-        //                if (position == 7) {
-        //                    Intent cultureVolunteer = new Intent(getActivity(), FilmRoomActivity.class);
-        //                    startActivity(cultureVolunteer);
-        //                }
-        //                if (position == 8) {
-        //                    Intent cultureVolunteer = new Intent(getActivity(), CultureVolunteerActivity.class);
-        //                    startActivity(cultureVolunteer);
-        //                }
-        //                if (position == 9) {
-        //                    Intent intentLoveSociety = new Intent(getActivity(), LoveSocietyActivity.class);
-        //                    startActivity(intentLoveSociety);
-        //                }
-        //                if (position == 10) {
-        //                    Intent intentLoveSociety = new Intent(getActivity(), CultureCrowdFundingActivity.class);
-        //                    startActivity(intentLoveSociety);
-        //                }
-        //                if (position == 11) {
-        //                    Intent intentLoveSociety = new Intent(getActivity(), AtSceneActivity.class);
-        //                    intentLoveSociety.putExtra("ShowDetails", false);
-        //                    startActivity(intentLoveSociety);
-        //                }
-        //            }
-        //        });
-
         bigEventAdapter = new BigEventAdapter(getActivity());
         if (null == data) {
             data = new ArrayList<>();
@@ -419,22 +381,21 @@ public class Home_F extends AbsFragment {
                     Gson gson = new Gson();
                     BannerInfo bannerInfo = gson.fromJson(response.toString(), BannerInfo.class);
                     List<BannerInfo.ArrBean> arr = bannerInfo.getArr();
-                    initViewPager(arr);
+                    if (null == bannerUrl) {
+                        bannerUrl = new ArrayList<>();
+                    } else {
+                        bannerUrl.clear();
+                    }
+                    for (int i = 0; i < arr.size(); i++) {
+                        bannerUrl.add(arr.get(i).getNewpic());
+                    }
+                    initViewPager();
                 }
             }
         });
     }
 
-    private void initViewPager(List<BannerInfo.ArrBean> arr) {
-        if (null == bannerUrl) {
-            bannerUrl = new ArrayList<>();
-        } else {
-            bannerUrl.clear();
-        }
-        for (int i = 0; i < arr.size(); i++) {
-            bannerUrl.add(arr.get(i).getNewpic());
-        }
-
+    private void initViewPager() {
         if (null == allListView) {
             allListView = new ArrayList<View>();
         } else {
@@ -455,105 +416,44 @@ public class Home_F extends AbsFragment {
             viewPager.stopPlay();
         }
         viewPager.startPlay();
-        viewPager.setOnItemClickListener(new AbOnItemClickListener() {
-            @Override
-            public void onClick(int position) {
-                //跳转到详情界面
-                //                Intent intent = new Intent(getActivity(), BabyActivity.class);
-                //                startActivity(intent);
-            }
-        });
     }
 
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        switch (requestCode) {
-            case REQUEST_CODE_CITY:
-                if (data != null) {
-                    city = data.getStringExtra("city") + "市";
-                    cityCode = data.getStringExtra("cityCode");
-                    iv_shao.setText(city);
-                    //                    MyApplication.cityName = city;
-                    //根据修改地址，修改链接head；
-                } else {
-                    city = "南宁市";
-                    iv_shao.setText("南宁市");
-                }
-                //获取地址请求头
-                getUrlHead(city, mView);
-                break;
-            default:
-                break;
-        }
-    }
-
-    private void initIconBanner() {
-        if (null == iconListView) {
-            iconListView = new ArrayList<View>();
-        } else {
-            iconListView.clear();
-        }
-
-        for (int i = 0; i < 2; i++) {
-            //导入iconPager的布局
-            View view = LayoutInflater.from(getActivity()).inflate(R.layout.icon_pager, null);
-            mMy_icon_gridview = (MyGridView) view.findViewById(R.id.my_icon_gridview);
-            pic_path_icon = new ArrayList();
-            pic_path_icon_name = new ArrayList();
-            for (int n = 0; n < pic_path_icon1.length; n++) {
-                pic_path_icon.add(pic_path_icon1[n]);
-            }
-            for (int n = 0; n < pic_path_icon_name1.length; n++) {
-                pic_path_icon_name.add(pic_path_icon_name1[n]);
-            }
-            adapter_GridView_icon = new Adapter_GridView_icon(getActivity(), pic_path_icon, pic_path_icon_name);
-            mMy_icon_gridview.setAdapter(adapter_GridView_icon);
-            iconListView.add(view);
-            //设置图标点击事件
-            setIconClick(mMy_icon_gridview);
-        }
-        MyViewPagerAdapter myViewPagerAdapter = new MyViewPagerAdapter(iconListView);
-        mViewPager_icon.setAdapter(myViewPagerAdapter);
-        mViewPager_icon.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+    private void getCityAreaCode(String cityName) {
+        RequestParams params = new RequestParams();
+        params.put("city_name", cityName);
+        HttpUtil.get(NetConfig.CITY_AREA_CODE, params, new HttpUtil.JsonHttpResponseUtil() {
             @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
+            public void onStart() {
+                super.onStart();
             }
 
             @Override
-            public void onPageSelected(int position) {
-                if (pic_path_icon != null) {
-                    pic_path_icon.clear();
-                }
-                if (pic_path_icon_name != null) {
-                    pic_path_icon_name.clear();
-                }
-                if (position == 0) {
-                    mImg_banner1.setImageResource(R.drawable.bg_banner_round_blue);
-                    mImg_banner2.setImageResource(R.drawable.bg_banner_round_gray);
-                    for (int n = 0; n < pic_path_icon1.length; n++) {
-                        pic_path_icon.add(pic_path_icon1[n]);
-                    }
-                    for (int n = 0; n < pic_path_icon_name1.length; n++) {
-                        pic_path_icon_name.add(pic_path_icon_name1[n]);
-                    }
-                } else if (position == 1) {
-                    mImg_banner1.setImageResource(R.drawable.bg_banner_round_gray);
-                    mImg_banner2.setImageResource(R.drawable.bg_banner_round_blue);
-                    for (int n = 0; n < pic_path_icon2.length; n++) {
-                        pic_path_icon.add(pic_path_icon2[n]);
-                    }
-                    for (int n = 0; n < pic_path_icon_name2.length; n++) {
-                        pic_path_icon_name.add(pic_path_icon_name2[n]);
-                    }
-                }
-                adapter_GridView_icon.notifyDataSetChanged();
+            public void onFinish() {
+                super.onFinish();
             }
 
             @Override
-            public void onPageScrollStateChanged(int state) {
-
+            public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
+                if (statusCode == 200) {
+                    String ress = response.toString();
+                    if (null != ress && !ress.equals("") && !ress.equals("{}")) {
+                        Gson gson = new Gson();
+                        try {
+                            CityAreaCodeInfo areaCodeInfo = gson.fromJson(response.toString(), CityAreaCodeInfo.class);
+                            List<CityAreaCodeInfo.ArrBean> arr = areaCodeInfo.getArr();
+                            if (arr.size() > 0) {
+                                if (null == MyApplication.mCityAreaCode) {
+                                    MyApplication.mCityAreaCode = new ArrayList<CityAreaCodeInfo.ArrBean>();
+                                } else {
+                                    MyApplication.mCityAreaCode.clear();
+                                }
+                                MyApplication.mCityAreaCode.addAll(arr);
+                            }
+                        } catch (Exception e) {
+                            //                            ToastUtils.makeShortText("未搜索到城市下地区", getActivity());
+                        }
+                    }
+                }
             }
         });
     }
@@ -690,15 +590,6 @@ public class Home_F extends AbsFragment {
         // 初始化显示的条目对象
         @Override
         public Object instantiateItem(ViewGroup container, int position) {
-            //
-            //            LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.FILL_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-            //            LayoutInflater inflater = LayoutInflater.from(getActivity());
-            //            View view = inflater.inflate(R.layout.photoview_only, null);
-            //            view.setLayoutParams(lp);
-            //            //设置viewpager中子view显示的数据
-            //            PhotoView img_show = (PhotoView) view.findViewById(R.id.photoview);
-            //            ImageLoaderUtil.displayImageIcon(NetConfig.HEAD_IMG + mArrayList.get(position), img_show);
-
             // 添加到ViewPager容器
             container.addView(mArrayList.get(position));
             // 返回填充的View对象

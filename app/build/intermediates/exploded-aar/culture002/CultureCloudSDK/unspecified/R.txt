@@ -33,7 +33,8 @@ int id tv_title 0x7f090005
 int layout dialog_custom_progress 0x7f030000
 int layout m_main 0x7f030001
 int mipmap ic_launcher 0x7f020000
-int mipmap progress_1 0x7f020001
+int mipmap icon_no_pic 0x7f020001
+int mipmap progress_1 0x7f020002
 int string app_name 0x7f070000
 int style ActivityTheme 0x7f080000
 int style AppBaseTheme 0x7f080001

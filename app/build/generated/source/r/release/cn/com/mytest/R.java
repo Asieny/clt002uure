@@ -53,7 +53,8 @@ public final class R {
 	}
 	public static final class mipmap {
 		public static final int ic_launcher = 0x7f030003;
-		public static final int progress_1 = 0x7f030011;
+		public static final int icon_no_pic = 0x7f03000c;
+		public static final int progress_1 = 0x7f030012;
 	}
 	public static final class string {
 		public static final int app_name = 0x7f080059;

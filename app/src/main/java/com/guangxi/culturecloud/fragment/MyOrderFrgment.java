@@ -38,8 +38,6 @@ public class MyOrderFrgment extends Fragment implements XListView.IXListViewList
 
     private MyOrderAdapter adapter;
 
-    private MyOrderInfo firstInfo;
-
     private ArrayList<MyOrderInfo> data = new ArrayList<MyOrderInfo>();
 
     private View    view;
@@ -105,7 +103,7 @@ public class MyOrderFrgment extends Fragment implements XListView.IXListViewList
                 if (array != null && array.length() > 0) {
                     for (int i = 0; i < array.length(); i++) {
                         JSONObject obj = array.optJSONObject(i);
-                        firstInfo = new MyOrderInfo().fromJson(obj.toString());
+                        MyOrderInfo firstInfo = new MyOrderInfo().fromJson(obj.toString());
                         data.add(firstInfo);
                     }
                     adapter.setDataSource(data);

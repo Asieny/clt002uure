@@ -60,12 +60,12 @@
         "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_item_background_holo_light.xml"
     },
     {
-        "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ssdk_oks_classic_progressbar.xml",
-        "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable\\ssdk_oks_classic_progressbar.xml"
-    },
-    {
         "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_hot.png",
         "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable\\ic_hot.png"
+    },
+    {
+        "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ssdk_oks_classic_progressbar.xml",
+        "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable\\ssdk_oks_classic_progressbar.xml"
     },
     {
         "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
@@ -204,12 +204,12 @@
         "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable\\zhijiao.xml"
     },
     {
-        "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_time.png",
-        "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable\\icon_time.png"
-    },
-    {
         "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
         "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon_time.png",
+        "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable\\icon_time.png"
     },
     {
         "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_banner_round_gray.xml",

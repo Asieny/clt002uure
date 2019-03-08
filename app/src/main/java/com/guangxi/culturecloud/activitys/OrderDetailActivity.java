@@ -149,7 +149,7 @@ public class OrderDetailActivity extends BaseActivity implements View.OnClickLis
             lat = Double.parseDouble(myOrderInfo.lat);
             lng = Double.parseDouble(myOrderInfo.lng);
         }
-        if (!newpic.equals("")) {
+        if (!"".equals(newpic)) {
             String picUrl = newpic.split(",")[0];
             ImageLoaderUtil.displayImageIcon(myOrderInfo.get_img_address + picUrl.replace("\\", "/"), mImg_show);
         }
@@ -281,7 +281,7 @@ public class OrderDetailActivity extends BaseActivity implements View.OnClickLis
         intent.putExtra("id", myOrderInfo.activity_id);
         intent.putExtra("url_address", myOrderInfo.url_address);
         intent.putExtra("get_img_address", myOrderInfo.get_img_address);
-        if (!myOrderInfo.newpic.equals("")) {
+        if (null != myOrderInfo.newpic && !"".equals(myOrderInfo.newpic)) {
             String picUrl = myOrderInfo.newpic.split(",")[0].replace("\\", "/");
             intent.putExtra("img_address", picUrl);
         }

@@ -48,12 +48,12 @@
         "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable-xhdpi\\secret__13.png"
     },
     {
-        "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi\\second_2_collection.png",
-        "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable-xhdpi\\second_2_collection.png"
-    },
-    {
         "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi\\ic_launcher.png",
         "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi\\second_2_collection.png",
+        "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable-xhdpi\\second_2_collection.png"
     },
     {
         "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi\\find_g_8.png",
@@ -220,12 +220,12 @@
         "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable-xhdpi\\find_g_4.png"
     },
     {
-        "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi\\ic_launcher_background.png",
-        "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\generated\\res\\pngs\\release\\drawable-xhdpi\\ic_launcher_background.png"
-    },
-    {
         "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi\\secret__14.png",
         "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\drawable-xhdpi\\secret__14.png"
+    },
+    {
+        "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi\\ic_launcher_background.png",
+        "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\generated\\res\\pngs\\release\\drawable-xhdpi\\ic_launcher_background.png"
     },
     {
         "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi\\ssdk_oks_classic_instagram.png",

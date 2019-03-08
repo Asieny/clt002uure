@@ -6,56 +6,81 @@ package com.guangxi.culturecloud.global;
  * @author zww
  */
 public class NetConfig {
-    //    public static String MainROOT                 = "http://222.216.241.136:8081/whyapi/";
-    public static String MainROOT = "http://129.28.68.184:8080/whyapi/";
+    public static String MainROOT = "http://222.216.241.136:8081/whyapi/";
+    //    public static String MainROOT = "http://129.28.68.184:8080/whyapi/";
 
-    public static String ROOT                     = "http://129.28.68.184:8081/citywhyapi/";
+    //    public static String ROOT                     = "http://129.28.68.184:8081/citywhyapi/";
+    public static String ROOT                     = "http://222.216.241.136:8081/whyapi/";
     //链接请求头
-    //    public static String URL_HEAD_ADDRESS         = "http://222.216.241.136:8081/whyapi/";
-    public static String URL_HEAD_ADDRESS         = "http://129.28.68.184:8081/citywhyapi/";
+    public static String URL_HEAD_ADDRESS         = "http://222.216.241.136:8081/whyapi/";
+    //    public static String URL_HEAD_ADDRESS         = "http://129.28.68.184:8081/citywhyapi/";
     //提交图片接口（可根据地区改变）
     public static String URL_CHANGE_UPLOAD_BASE64 = ROOT + "uploadBase64";
 
-    //    public static String IMG      = "http://222.216.241.136:8081/upFiles/";
-    public static String IMG      = "http://129.28.68.184:8080/upFiles/";
+    public static String IMG      = "http://222.216.241.136:8081/upFiles/";
+    //    public static String IMG      = "http://129.28.68.184:8080/upFiles/";
     //用户提交的图片前面加地址
-    //    public static String HEAD_IMG = "http://222.216.241.136:8081/upFiles/photo/";
-    public static String HEAD_IMG = "http://129.28.68.184:8080/upFiles/photo/";
+    public static String HEAD_IMG = "http://222.216.241.136:8081/upFiles/photo/";
+    //    public static String HEAD_IMG = "http://129.28.68.184:8080/upFiles/photo/";
 
-
-    //游客ID
-    public static String UserID         = "28";
-    //第一个链接，定位后，用来修改链接头，获取不同内容
-    public static String FIRSTURL       = MainROOT + "serApiAddressByArea";
-    //获取城市下地区名称和内码
-    public static String CITY_AREA_CODE = MainROOT + "cityCode";
-    //登陆明细
-    public static String INSERT_LOGINCOUNT = MainROOT + "insertLoginCount";
+    //首页轮播图地址
+    public static String BANNERLIST = ROOT + "bannerList";
 
 
     //提交图片接口
-    public static String UPLOAD_BASE64 = ROOT + "uploadBase64";
-
+    public static String UPLOAD_BASE64              = MainROOT + "uploadBase64";
     //提交头像
-    public static String INSERTPIC     = ROOT + "insertPic";
-    //首页轮播图地址
-    public static String BANNERLIST    = ROOT + "bannerList";
-    //首页活动推荐
+    public static String INSERTPIC                  = MainROOT + "insertPic";
+    //游客ID
+    public static String UserID                     = "28";
+    //第一个链接，定位后，用来修改链接头，获取不同内容
+    public static String FIRSTURL                   = MainROOT + "serApiAddressByArea";
+    //获取城市下地区名称和内码
+    public static String CITY_AREA_CODE             = MainROOT + "cityCode";
+    //登陆明细
+    public static String INSERT_LOGINCOUNT          = MainROOT + "insertLoginCount";
+    //订单列表
+    public static String SEARCHORDERLIST            = MainROOT + "searchOrderList?";
     //用户注册
-    public static String REGISTER      = ROOT + "register";
+    public static String REGISTER                   = MainROOT + "register";
     //用户发送短信验证码
-    public static String CHECK_MESSAGE = ROOT + "checkMessage";
-
+    public static String CHECK_MESSAGE              = MainROOT + "checkMessage";
     //用户登录
-    public static String LOGIN = ROOT + "login?";
-
+    public static String LOGIN                      = MainROOT + "login?";
     //修改密码
-    public static String MODIFYPSW       = ROOT + "modifyPsw?";
-    //图书馆分类
-    public static String LIBRARYTYPELIST = ROOT + "libraryTypeList";
-    //美术馆分类
-    public static String ARTSTYPELIST    = ROOT + "artsTypeList";
+    public static String MODIFYPSW                  = MainROOT + "modifyPsw?";
+    //找回密码
+    public static String BACK_PSW                   = MainROOT + "backPsw";
+    //帮助和反馈
+    public static String INSERT_HELP                = MainROOT + "insertHelp";
+    //申请入驻
+    public static String INSERT_JOIN                = MainROOT + "insertJoin";
+    //个人收藏列表
+    public static String MAINFAVOURITELIST          = MainROOT + "mainfavouriteList";
+    //个人评论列表
+    public static String MAINCOMMENTLIST            = MainROOT + "maincommentList";
+    //帮助规则
+    public static String SERHELP_RULE               = MainROOT + "serHelpRule";
+    //积分规则
+    public static String POINTS_RULE                = MainROOT + "serPointsRule";
+    //分享录入积分
+    public static String INSERT_SHARE               = MainROOT + "insertshare";
+    //个人积分列表
+    public static String SERUSER_POINTS             = MainROOT + "seruserpoints";
+    //广场列表
+    public static String GCZAN_LIST                 = MainROOT + "gcZanList";
+    //点赞讨厌投票
+    public static String INSERT_ZANCOL              = MainROOT + "insertZanCol";
+    //广场活动排行榜
+    public static String SERRANKING_GCACTIVITY_LIST = MainROOT + "serRankingGcActivityList";
+    //广场发布
+    public static String INSERT_GC                  = MainROOT + "insertGc";
 
+
+    //图书馆分类
+    public static String LIBRARYTYPELIST         = ROOT + "libraryTypeList";
+    //美术馆分类
+    public static String ARTSTYPELIST            = ROOT + "artsTypeList";
     //图书馆详情
     public static String LIBRARY_Detail          = ROOT + "searchLibraryInfo";
     //美术馆详情
@@ -75,25 +100,22 @@ public class NetConfig {
     //体育馆详情
     public static String SPORT_Detail  = ROOT + "searchSportsInfo";
 
-
     //民族文化GET /nationList
     public static String NATIONLIST      = ROOT + "nationList?";
     //体育场馆GET /sportsActivityList
     public static String SPORTLIST       = ROOT + "sportsActivityList?";
     //文化艺术分类
     public static String CULTURETYPELIST = ROOT + "cultureTypeList";
-
     //文化艺术详情
-    public static String CULTURE_Detail = ROOT + "searchCultureInfo";
+    public static String CULTURE_Detail  = ROOT + "searchCultureInfo";
 
 
     //博物馆分类
-    public static String MUSEUMTYPELIST = ROOT + "museumTypeList";
+    public static String MUSEUMTYPELIST      = ROOT + "museumTypeList";
     //博物馆详情
-    public static String MUSEUM_Detail  = ROOT + "searchMuseumInfo";
+    public static String MUSEUM_Detail       = ROOT + "searchMuseumInfo";
     //影剧院详情
-    public static String FILM_Detail    = ROOT + "searchTheaterInfo";
-
+    public static String FILM_Detail         = ROOT + "searchTheaterInfo";
     //图书馆列表
     public static String LIBRARYACTIVITYLIST = ROOT + "libraryActivityList?";
     //美术馆
@@ -107,10 +129,9 @@ public class NetConfig {
 
     //活动众筹详情
     public static String SEARCHCROWDFUNDINGINFO = ROOT + "searchCrowdfundingInfo?";
-    //订单列表
-    public static String SEARCHORDERLIST        = ROOT + "searchOrderList?";
+
     //订单列表里的活动详情
-    public static String SERACTIVITYINFO        = ROOT + "serActivityInfo";
+    public static String SERACTIVITYINFO = ROOT + "serActivityInfo";
 
     //推荐列表GET /recommendList
     public static String RECOMMND_LIST = ROOT + "recommendList";
@@ -178,15 +199,6 @@ public class NetConfig {
     //商家活动室详情
     public static String BUSINESS_PLAYROOM  = ROOT + "businessplayroom";
 
-    //广场列表
-    public static String GCZAN_LIST                 = ROOT + "gcZanList";
-    //点赞讨厌投票
-    public static String INSERT_ZANCOL              = ROOT + "insertZanCol";
-    //广场活动排行榜
-    public static String SERRANKING_GCACTIVITY_LIST = ROOT + "serRankingGcActivityList";
-    //广场发布
-    public static String INSERT_GC                  = ROOT + "insertGc";
-
     //实名认证
     public static String INSERT_SMRZ          = ROOT + "insertSmrz";
     //个人资质认证
@@ -195,28 +207,10 @@ public class NetConfig {
     public static String INSERT_ZZRZST        = ROOT + "insertZzrzSt";
     //公司资质认证
     public static String INSERT_ZZRZCOMPANY   = ROOT + "insertZzrzCompany";
-
-    //找回密码
-    public static String BACK_PSW          = ROOT + "backPsw";
-    //帮助和反馈
-    public static String INSERT_HELP       = ROOT + "insertHelp";
-    //申请入驻
-    public static String INSERT_JOIN       = ROOT + "insertJoin";
     //提交评论
-    public static String INSERT_COMMENT    = ROOT + "insertComment";
-    //个人收藏列表
-    public static String MAINFAVOURITELIST = ROOT + "mainfavouriteList";
-    //个人评论列表
-    public static String MAINCOMMENTLIST   = ROOT + "maincommentList";
-    //帮助规则
-    public static String SERHELP_RULE      = ROOT + "serHelpRule";
-    //积分规则
-    public static String POINTS_RULE       = ROOT + "serPointsRule";
-    //分享录入积分
-    public static String INSERT_SHARE      = ROOT + "insertshare";
-    //个人积分列表
-    public static String SERUSER_POINTS    = ROOT + "seruserpoints";
+    public static String INSERT_COMMENT       = ROOT + "insertComment";
+
 
     //研学上传视频
-    public static String UPLOADVIDEO = ROOT + "uploadVideo?";
+    public static String UPLOADVIDEO = MainROOT + "uploadVideo?";
 }

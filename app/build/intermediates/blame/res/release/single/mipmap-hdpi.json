@@ -4,6 +4,10 @@
         "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
+        "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\release\\mipmap-hdpi\\icon_no_pic.png",
+        "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\mipmap-hdpi\\icon_no_pic.png"
+    },
+    {
         "merged": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\res\\merged\\release\\mipmap-hdpi\\lines.png",
         "source": "D:\\D\\DDDDDDDDDDDD\\culture002\\app\\src\\main\\res\\mipmap-hdpi\\lines.png"
     }

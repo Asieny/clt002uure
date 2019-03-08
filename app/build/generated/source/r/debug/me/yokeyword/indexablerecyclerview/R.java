@@ -28,7 +28,7 @@ public final class R {
 		public static final int default_indexBar_textSpace = 0x7f09005e;
 	}
 	public static final class drawable {
-		public static final int dafault_indexBar_background = 0x7f0201ad;
+		public static final int dafault_indexBar_background = 0x7f0201ae;
 		public static final int indexable_bg_center_overlay = 0x7f0200f7;
 		public static final int indexable_bg_md_overlay = 0x7f0200f8;
 	}

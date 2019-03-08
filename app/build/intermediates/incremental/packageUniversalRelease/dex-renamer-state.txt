@@ -1,4 +1,4 @@
-#Mon Feb 18 14:29:46 CST 2019
+#Fri Mar 08 10:43:22 CST 2019
 base.0=D\:\\D\\DDDDDDDDDDDD\\culture002\\app\\build\\intermediates\\transforms\\dex\\release\\folders\\1000\\1f\\main
 renamed.1=classes.dex
 renamed.0=classes2.dex
